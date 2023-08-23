@@ -35,6 +35,7 @@ const sum = add(5, 10);
 // };
 // console.log(products.data[1].price);
 
+/*
 // example 3
 const user = {
   id: 5001,
@@ -49,3 +50,40 @@ const user = {
 };
 
 console.log(user.address.street.second);
+*/
+
+// =-=-=-=-=-=-= map start =-=-=-=-=-=-=
+
+// const numbers = [4, 5, 2, 8, 10];
+
+// const result = numbers.map((n) => n * 2);
+// console.log(result);
+
+// example 2
+// const products = [
+//   { id: 1, name: "lenovo", price: 650000 },
+//   { id: 2, name: "dell", price: 450000 },
+//   { id: 3, name: "hp", price: 40000 },
+//   { id: 4, name: "mac", price: 1650000 },
+// ];
+
+// const result = products.map((product) => product.name);
+// console.log(result);
+
+// =-=-=-=-=-=-= class methods start =-=-=-=-=-=-=
+
+class Teacher {
+  constructor(name, subject) {
+    this.name = name;
+    this.subject = subject;
+  }
+  lecture() {
+    console.log("sir si teaching Math");
+  }
+}
+
+const tapan = new Teacher("Tapon sir", "physics");
+console.log(tapan);
+
+const rashad = new Teacher("Rashad", "Javascript");
+console.log(rashad);
