@@ -185,3 +185,16 @@ const outputResult = deviated.filter((x) => x % 10 === 0);
 console.log(outputResult);
 
 */
+
+// =-=-=-=-=-=-= stop watch start =-=-=-=-=-=-=
+
+function kitchen() {
+  let roast = 0;
+  return function () {
+    roast++;
+    return roast;
+  };
+}
+
+const firstServer = kitchen();
+console.log(firstServer());
