@@ -227,17 +227,53 @@ console.log(total);
 */
 
 function setText() {
-  // document.getElementById("info1").innerText = "Bangladesh";
-  setTitle("info1", "Bangladesh");
-  console.log(setTitle("info1", "Bangladesh"));
+  document.getElementById("info1").innerText = "Bangladesh";
+  console.log("Hello world!");
+  // setTitle("info1", "Bangladesh");
+  // console.log(setTitle("info1", "Bangladesh"));
 }
-// function setText1() {
-//   console.log("Hello world!");
-// }
-// function setText2() {
-//   console.log("Hello world!");
+function setText1() {
+  document.getElementById("info2").innerText = "Hello world!, clicked Button 2";
+  console.log("Hello world!");
+}
+function setText2() {
+  document.getElementById("info3").innerText = "Hello world!, clicked Button 3";
+  console.log("Hello world!");
+}
+
+// function setTitle(id, text) {
+//   document.getElementById(id).inertText = text;
 // }
 
-function setTitle(id, text) {
-  document.getElementById(id).inertText = text;
+// =-=-=-=-=-=-= counter concurrency
+
+const counterElement = document.getElementById("counter");
+const incrementBtn = document.getElementById("incrementBtn");
+const decrementBtn = document.getElementById("decrementBtn");
+const resetBtn = document.getElementById("resetBtn");
+
+let count = 0;
+
+// Update the counter display
+function updateCounter() {
+  counterElement.textContent = count;
 }
+
+// Attach click event listeners to the buttons
+incrementBtn.addEventListener("click", () => {
+  count++;
+  updateCounter();
+});
+
+decrementBtn.addEventListener("click", () => {
+  count--;
+  updateCounter();
+});
+
+resetBtn.addEventListener("click", () => {
+  count = 0;
+  updateCounter();
+});
+
+// Initial update
+updateCounter();

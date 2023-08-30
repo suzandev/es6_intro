@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.designItem {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#counter {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#incrementBtn:hover {
+  background: radial-gradient(#ff512f, #dd2476);
+}
+
+#decrementBtn:hover {
+  background: radial-gradient(#009245, #fcee21);
+}
+
+#resetBtn:hover {
+  background: linear-gradient(#833ab4, #fd1d1d, #fcb045);
+}
+
+#incrementBtn,
+#decrementBtn,
+#resetBtn {
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
