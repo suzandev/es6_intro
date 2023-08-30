@@ -187,7 +187,7 @@ console.log(outputResult);
 */
 
 // =-=-=-=-=-=-= stop watch start =-=-=-=-=-=-=
-
+/*
 function kitchen() {
   let roast = 0;
   return function () {
@@ -198,3 +198,46 @@ function kitchen() {
 
 const firstServer = kitchen();
 console.log(firstServer());
+*/
+
+/*
+// callback function
+
+function result(greeting, name) {
+  greeting(name);
+}
+
+function greetingMorning(name) {
+  console.log("Good Morning", name);
+}
+
+result(greetingMorning, "Tom Hanks");
+*/
+
+/*
+// Arguments for callback function
+
+function sum(a, b, c) {
+  const result = a + b + c;
+  return result;
+}
+
+const total = sum(45, 89, 12, 45, 98, 56);
+console.log(total);
+*/
+
+function setText() {
+  // document.getElementById("info1").innerText = "Bangladesh";
+  setTitle("info1", "Bangladesh");
+  console.log(setTitle("info1", "Bangladesh"));
+}
+// function setText1() {
+//   console.log("Hello world!");
+// }
+// function setText2() {
+//   console.log("Hello world!");
+// }
+
+function setTitle(id, text) {
+  document.getElementById(id).inertText = text;
+}
